@@ -1,27 +1,9 @@
-import { useState } from "react";
-
+import { UseReducer } from "./Components/UseReducer";
 const App = () => {
-  const [bgColor, setBgColor] = useState("white");
-
-  const colors = ["red", "green", "blue"];
-
   return (
-    <div
-      style={{
-        backgroundColor: bgColor,
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        gap: "10px",
-      }}
-    >
-      {colors.map((color) => (
-        <button key={color} onClick={() => setBgColor(color)}>
-          {color}
-        </button>
-      ))}
-    </div>
+    <>
+      <UseReducer />
+    </>
   );
 };
 
