@@ -1,8 +1,9 @@
-import { UseReducer } from "./Components/UseReducer";
+import { UseID } from "./Components/useID/useID";
 const App = () => {
   return (
     <>
-      <UseReducer />
+      <UseID component_Name="ONE" />
+      <UseID component_Name="Two" />
     </>
   );
 };
