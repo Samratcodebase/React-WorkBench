@@ -1,9 +1,8 @@
-import { UseID } from "./Components/useID/useID";
+import { Counter } from "./projects/counterProject/Counter";
 const App = () => {
   return (
     <>
-      <UseID component_Name="ONE" />
-      <UseID component_Name="Two" />
+      <Counter />
     </>
   );
 };
