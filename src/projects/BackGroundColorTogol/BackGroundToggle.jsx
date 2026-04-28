@@ -11,9 +11,11 @@ export const BackGroundToggle = () => {
         type="button"
         onClick={() => {
           if (BackGroundColor == "white") {
-            SetBackgroundColor("black");
+            console.log(BackGroundColor);
+
+            SetBackgroundColor("red");
           } else {
-            SetBackgroundColor("white");
+            SetBackgroundColor("green");
           }
         }}
       >

@@ -1,0 +1,51 @@
+.accordion-item {
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid #e0e0e0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  padding: 0;
+}
+
+.accordion-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: #667eea;
+}
+
+.accordion-item h1 {
+  margin: 0;
+  padding: 20px 25px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item p {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item h2 {
+  margin: 0;
+  padding: 0 25px 20px 25px;
+  color: #f8f9fa;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}

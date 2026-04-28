@@ -3,16 +3,18 @@ import Todo from "./projects/TodoProject/Todo";
 import { Meals } from "./projects/MealsProject/Meals";
 import { Calculator } from "./projects/Calculator/Calculator";
 import { BackGroundToggle } from "./projects/BackGroundColorTogol/BackGroundToggle";
+import { accordionData } from "./projects/Accordian/Accordian.js";
+import { Accordian } from "./projects/Accordian/Accordian.jsx";
 const App = () => {
-  const [input, setinput] = useState("");
-  const [value, setvalue] = useState("");
-
   return (
     <>
       {/* <Counter /> */}
       {/* <Meals /> */}
       {/* <Calculator /> */}
-      <BackGroundToggle />
+      {/* <BackGroundToggle /> */}
+      {accordionData.map(({ id, title, content }) => {
+        return <Accordian title={title} content={content} />;
+      })}
     </>
   );
 };
