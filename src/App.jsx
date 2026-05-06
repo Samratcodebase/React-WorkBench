@@ -5,6 +5,7 @@ import { Calculator } from "./projects/Calculator/Calculator";
 import { BackGroundToggle } from "./projects/BackGroundColorTogol/BackGroundToggle";
 import { accordionData } from "./projects/Accordian/Accordian.js";
 import { Accordian } from "./projects/Accordian/Accordian.jsx";
+import ManualForm from "./projects/ManualForm/ManualForm.jsx";
 const App = () => {
   return (
     <>
@@ -12,9 +13,10 @@ const App = () => {
       {/* <Meals /> */}
       {/* <Calculator /> */}
       {/* <BackGroundToggle /> */}
-      {accordionData.map(({ id, title, content }) => {
+      {/* {accordionData.map(({ id, title, content }) => {
         return <Accordian title={title} content={content} />;
-      })}
+      })} */}
+      <ManualForm />
     </>
   );
 };
